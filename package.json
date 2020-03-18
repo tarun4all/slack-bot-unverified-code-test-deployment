@@ -1,0 +1,17 @@
+{
+  "name": "golsinc-slack-app",
+  "version": "1.0.0",
+  "description": "GolSinc App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Golsinc",
+  "license": "Golsinc",
+  "dependencies": {
+    "@slack/bolt": "^1.7.0",
+    "query-string": "^6.11.1",
+    "axios": "^0.19.2"
+  }
+}
