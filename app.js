@@ -4,7 +4,7 @@ const qs = require('query-string');
 
 // Initializes your app with your bot token and signing secret
 const app = new App({
-    token: 'xoxb-977111493845-967561669107-YP3bXdGfyg607VrDWAsQnGvN',//process.env.SLACK_BOT_TOKEN,
+    token: 'xoxb-977111493845-967561669107-uStjNo7MtjbL3CE6k35WobxI',//process.env.SLACK_BOT_TOKEN,
     signingSecret: '34e2c20a5ed474df20d9bae45363ca38'//process.env.SLACK_SIGNING_SECRET
 });
 
@@ -150,7 +150,7 @@ app.message('hello', ({ message, say }) => {
 
 (async () => {
     // Start your app
-    await app.start(443);
+    await app.start(3000);
 
     console.log('⚡️ Bolt app is running!');
 })();
