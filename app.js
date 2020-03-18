@@ -4,7 +4,7 @@ const qs = require('query-string');
 
 // Initializes your app with your bot token and signing secret
 const app = new App({
-    token: 'xoxp-977111493845-977111953909-998412539281-67fa9876f7061e30f5ed0892690be19b', //process.env.SLACK_BOT_TOKEN,
+    token: 'xoxb-977111493845-967561669107-DlaE00j6LgKqXQo219c2Vf2F', //process.env.SLACK_BOT_TOKEN,
     signingSecret: '34e2c20a5ed474df20d9bae45363ca38' //process.env.SLACK_SIGNING_SECRET
 });
 
@@ -41,7 +41,7 @@ app.message(async ({ payload, context }) => {
 
         const updateResult = await app.client.chat.update({
             // The token you used to initialize your app is stored in the `context` object
-            token: 'xoxp-977111493845-977111953909-998412539281-67fa9876f7061e30f5ed0892690be19b',
+            token: 'xoxp-977111493845-977111953909-1008040177124-d5556fd637897edf45419e691fdefd77',
             // Payload message should be posted in the channel where original message was heard
             channel: payload.channel,
             ts: payload.ts,
