@@ -4,8 +4,8 @@ const qs = require('query-string');
 
 // Initializes your app with your bot token and signing secret
 const app = new App({
-    token: 'xoxb-977111493845-967561669107-W6KFW4TRqXaTaEioRv2E8mUb',//process.env.SLACK_BOT_TOKEN,
-    signingSecret: '34e2c20a5ed474df20d9bae45363ca38'//process.env.SLACK_SIGNING_SECRET
+    token: 'xoxp-977111493845-977111953909-998412539281-67fa9876f7061e30f5ed0892690be19b', //process.env.SLACK_BOT_TOKEN,
+    signingSecret: '34e2c20a5ed474df20d9bae45363ca38' //process.env.SLACK_SIGNING_SECRET
 });
 
 //simplata API Call
