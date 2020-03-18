@@ -41,7 +41,7 @@ app.message(async ({ payload, context }) => {
 
         const updateResult = await app.client.chat.update({
             // The token you used to initialize your app is stored in the `context` object
-            token: 'xoxp-977111493845-977111953909-980462466532-3645deaaecfab7ff6c33b8fdd59e574d',
+            token: 'xoxp-977111493845-977111953909-998412539281-67fa9876f7061e30f5ed0892690be19b',
             // Payload message should be posted in the channel where original message was heard
             channel: payload.channel,
             ts: payload.ts,
