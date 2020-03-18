@@ -8,6 +8,11 @@ const app = new App({
     signingSecret: '34e2c20a5ed474df20d9bae45363ca38'
 });
 
+app.message('hello', ({ message, say }) => {
+    // say() sends a message to the channel where the event was triggered
+    say(`Hey there <@${message.user}>!`);
+});
+
 // //simplata API Call
 // function getMatchData(msg) {
 //     const formData = {
@@ -145,7 +150,7 @@ const app = new App({
 
 (async () => {
     // Start your app
-    await app.start(80);
+    await app.start(443);
 
     console.log('⚡️ Bolt app is running!');
 })();
