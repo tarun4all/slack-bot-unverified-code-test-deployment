@@ -4,7 +4,7 @@ const qs = require('query-string');
 
 // Initializes your app with your bot token and signing secret
 const app = new App({
-    token: 'xoxb-977111493845-967561669107-UMlYNEBfVoJSJ1dmtIeO72HB',
+    token: 'xoxb-977111493845-967561669107-EncI1ZW7nLRMq6kKAjO1uQHK',
     signingSecret: '34e2c20a5ed474df20d9bae45363ca38'
 });
 
