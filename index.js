@@ -32,7 +32,7 @@ app.post('/', (req, res) => {
         //     console.log(response);
         //   });
         request.post({url:'https://slack.com/api/chat.update', formData: {
-            token: 'xoxp-854617017029-854607499008-1013347019031-1ef07bda4a94fe38315bb372812a638d',
+            token: 'xoxp-854617017029-854607499008-1013698991174-ddf84b0ace301d7245f58bf770b2da5f',
             channel: req.body.event.channel,
             ts: req.body.event.ts,
             text: 'Chat encrypted..'
