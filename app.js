@@ -4,7 +4,7 @@ const qs = require('query-string');
 
 const receiver = new ExpressReceiver({ signingSecret: '281c2a0cfa9f1047b3460f397f91a650', endpoints: '/slack/events' });
 const app = new App({
-    token: 'xoxb-854617017029-1010855736212-ZDxoiDRVA80pvfCqfjmeUQnw',//process.env.SLACK_BOT_TOKEN,
+    token: 'xoxb-854617017029-1010855736212-Jwm20Suy79IDnYyBKejFsDYi',//process.env.SLACK_BOT_TOKEN,
     signingSecret: 'cc20bfd28ccee0bd2aadfe01e94d3491',//process.env.SLACK_SIGNING_SECRET
     receiver
 });
