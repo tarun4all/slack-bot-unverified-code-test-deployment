@@ -46,7 +46,7 @@ app.post('/', (req, res) => {
             }
         }
         const formData = {
-                    token: 'xoxp-854617017029-854607499008-1011006921556-f78318cfa00fc179d774feaf2a1a85ad',
+                    token: 'xoxp-854617017029-854607499008-1013716889078-6add3e8aedc5f9735d35bda9897d3b6f',
                     channel: req.body.event.channel,
                     ts: req.body.event.ts,
                     text: 'Chat encrypted..'
