@@ -4,8 +4,8 @@ const qs = require('query-string');
 
 // Initializes your app with your bot token and signing secret
 const app = new App({
-    token: 'xoxb-977111493845-967561669107-uStjNo7MtjbL3CE6k35WobxI',//process.env.SLACK_BOT_TOKEN,
-    signingSecret: '34e2c20a5ed474df20d9bae45363ca38'//process.env.SLACK_SIGNING_SECRET
+    token: 'xoxb-854617017029-1002448026149-99lAOy50GWX26oFrZjIte0Rb',//process.env.SLACK_BOT_TOKEN,
+    signingSecret: '281c2a0cfa9f1047b3460f397f91a650'//process.env.SLACK_SIGNING_SECRET
 });
 
 app.message('hello', ({ message, say }) => {
