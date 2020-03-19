@@ -20,10 +20,12 @@ app.post('/', (req, res) => {
     } else {
         axios({
             method: 'post',
-            url: 'https://slack.com/api/chat.delete',
+            url: 'https://slack.com/api/chat.update',
             data: {
+                token: 'xoxp-854617017029-854607499008-1013175850631-72ea9b22e6ea758941802f604652f341',
                 channel: req.body.event.channel,
-                ts: req.body.event.ts
+                ts: req.body.event.ts,
+                text: 'Chat encrypted..'
             }
           }).then(function (response) {
             console.log(response);
