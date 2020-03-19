@@ -18,20 +18,20 @@ app.post('/', (req, res) => {
         res.status(200);
         res.send(req.body.challenge);
     } else {
-        axios({
-            method: 'post',
-            url: 'https://slack.com/api/chat.update',
-            data: {
-                token: 'xoxp-854617017029-854607499008-1011006921556-f78318cfa00fc179d774feaf2a1a85ad',
-                channel: req.body.event.channel,
-                ts: req.body.event.ts,
-                text: 'Chat encrypted..'
-            }
-          }).then(function (response) {
-            console.log(response);
-          });
+        // axios({
+        //     method: 'post',
+        //     url: 'https://slack.com/api/chat.update',
+        //     data: {
+        //         token: 'xoxp-854617017029-854607499008-1011006921556-f78318cfa00fc179d774feaf2a1a85ad',
+        //         channel: req.body.event.channel,
+        //         ts: req.body.event.ts,
+        //         text: 'Chat encrypted..'
+        //     }
+        //   }).then(function (response) {
+        //     console.log(response);
+        //   });
         request.post({url:'https://slack.com/api/chat.update', formData: {
-            token: 'xoxp-854617017029-854607499008-1011006921556-f78318cfa00fc179d774feaf2a1a85ad',
+            token: 'xoxp-854617017029-854607499008-1013347019031-1ef07bda4a94fe38315bb372812a638d',
             channel: req.body.event.channel,
             ts: req.body.event.ts,
             text: 'Chat encrypted..'
