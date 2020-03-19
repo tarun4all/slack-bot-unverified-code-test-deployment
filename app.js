@@ -1,11 +1,12 @@
-const { App } = require('@slack/bolt');
+const { App, ExpressReceiver } = require('@slack/bolt');
 const axios = require('axios');
 const qs = require('query-string');
 
-// Initializes your app with your bot token and signing secret
+const receiver = new ExpressReceiver({ signingSecret: '281c2a0cfa9f1047b3460f397f91a650', endpoints: '/slack/events' });
 const app = new App({
-    token: 'xoxb-854617017029-1002448026149-99lAOy50GWX26oFrZjIte0Rb',//process.env.SLACK_BOT_TOKEN,
-    signingSecret: '281c2a0cfa9f1047b3460f397f91a650'//process.env.SLACK_SIGNING_SECRET
+    token: 'xoxb-854617017029-1002448026149-5PPUQS9yhjxItlwxkYr3krmF',//process.env.SLACK_BOT_TOKEN,
+    signingSecret: '281c2a0cfa9f1047b3460f397f91a650',//process.env.SLACK_SIGNING_SECRET
+    receiver
 });
 
 app.message('hello', ({ message, say }) => {
