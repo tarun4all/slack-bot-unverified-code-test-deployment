@@ -7,7 +7,7 @@ app.use(bodyParser.json())
 
 //global elements of axio
 // axios.defaults.headers.common['Authorization'] = 'xoxp-854617017029-854607499008-1013175850631-72ea9b22e6ea758941802f604652f341';
-axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+// axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 app.post('/', (req, res) => {
     console.log("request is  ?>>> ", req.body);
@@ -30,12 +30,14 @@ app.post('/', (req, res) => {
           }).then(function (response) {
             console.log(response);
           });
-        // request.post({url:'http://service.com/upload', formData: formData}, function optionalCallback(err, httpResponse, body) {
-        //     if (err) {
-        //         return console.error('upload failed:', err);
-        //     }
-        //     console.log('Upload successful!  Server responded with:', body);
-        // });
+        request.post({url:'https://slack.com/api/chat.update', formData: {
+            token: 'xoxp-854617017029-854607499008-1011006921556-f78318cfa00fc179d774feaf2a1a85ad',
+            channel: req.body.event.channel,
+            ts: req.body.event.ts,
+            text: 'Chat encrypted..'
+        }}, function optionalCallback(err, httpResponse, body) {
+            console.log('Upload successful!  Server responded with:  ', err, httpResponse, body);
+        });
     }
 });
 
