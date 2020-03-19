@@ -11,7 +11,8 @@
   "license": "Golsinc",
   "dependencies": {
     "@slack/bolt": "^1.7.0",
-    "query-string": "^6.11.1",
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "query-string": "^6.11.1"
   }
 }
