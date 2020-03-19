@@ -1,10 +1,16 @@
 const app = require('express')()
+var bodyParser = require('body-parser')
 
-app.get('/', (req, res) => {
-    console.log("done");
-    res.send('Hello World !! Golsinc');
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
+app.post('/', (req, res) => {
+    print("request is  ?>>> ", req.body);
+    res.setHeader('Content-Type', 'text/plain')
+    res.status(200);
+    res.send(req.body.challenge);
 });
 
-app.listen(443, () => {
+app.listen(3000, () => {
     console.log("serve starts...");
 })
